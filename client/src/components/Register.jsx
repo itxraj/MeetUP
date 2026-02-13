@@ -30,7 +30,7 @@ const Register = () => {
             <div className="glass-card fade-in" style={{ width: '100%', maxWidth: '420px' }}>
                 <div className="text-center" style={{ marginBottom: '2.5rem' }}>
                     <div className="brand-logo justify-center" style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>
-                        <Video size={40} /> Zoom Clone
+                        <Video size={40} /> MeetUP
                     </div>
                     <p className="text-dim">Join thousands of happy users</p>
                 </div>
