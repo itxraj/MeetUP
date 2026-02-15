@@ -306,7 +306,7 @@ const MeetingRoom = ({ user }) => {
                 {/* Top Header */}
                 <div style={{ height: '70px', padding: '0 2rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', zIndex: 10, background: 'rgba(3, 7, 18, 0.5)', backdropFilter: 'blur(10px)' }}>
                     <div className="flex align-center gap-1">
-                        <div className="brand-logo" style={{ fontSize: '1.2rem', marginRight: '1rem' }}>Zoon</div>
+                        <div className="brand-logo" style={{ fontSize: '1.2rem', marginRight: '1rem' }}>MeetUP</div>
                         <div style={{ background: 'var(--glass)', padding: '0.5rem 1rem', borderRadius: '12px', display: 'flex', alignItems: 'center', gap: '0.5rem', border: '1px solid var(--glass-border)' }}>
                             <span style={{ fontSize: '0.9rem', fontWeight: '600', color: 'var(--text)' }}>{roomId}</span>
                             <button onClick={copyRoomId} style={{ background: 'none', border: 'none', color: 'var(--text-dim)', cursor: 'pointer', padding: '4px', display: 'flex' }}>
