@@ -39,7 +39,8 @@ const MeetingRoom = ({ user }) => {
             setMeetingTime(prev => prev + 1);
         }, 1000);
 
-        socketRef.current = io.connect('http://localhost:5000');
+        const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+        socketRef.current = io.connect(apiUrl);
 
         const joinRoom = () => {
             console.log("Emitting join-room for ID:", roomId, "as user:", user.displayName);
