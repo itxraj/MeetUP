@@ -11,7 +11,7 @@ export default defineConfig({
     server: {
         port: 5173,
         proxy: {
-            '/auth': 'http://localhost:5000',
+            '/auth': 'https://meetup-dway.onrender.com',
         }
     }
 })

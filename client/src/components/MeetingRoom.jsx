@@ -39,7 +39,7 @@ const MeetingRoom = ({ user }) => {
             setMeetingTime(prev => prev + 1);
         }, 1000);
 
-        const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+        const apiUrl = import.meta.env.VITE_API_URL || 'https://meetup-dway.onrender.com';
         socketRef.current = io.connect(apiUrl);
 
         const joinRoom = () => {

@@ -15,7 +15,7 @@ const Register = () => {
         setLoading(true);
         setError('');
         try {
-            const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+            const apiUrl = import.meta.env.VITE_API_URL || 'https://meetup-dway.onrender.com';
             await axios.post(`${apiUrl}/auth/register`, formData);
             setSuccess('Account created successfully! Redirecting...');
             setTimeout(() => navigate('/login'), 2000);
